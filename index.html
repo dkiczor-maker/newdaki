@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin:0;
     font-family:'Inter', sans-serif;
@@ -32,6 +35,9 @@ header{
     align-items:center;
     padding:20px 60px;
     background:#111a23;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 header img{
     height:60px;
@@ -41,6 +47,10 @@ nav a{
     color:#fff;
     text-decoration:none;
     font-weight:500;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #00b4ff;
 }
 .hero{
     background:url('orlen.jpg') center/cover no-repeat;
@@ -82,9 +92,17 @@ section{
     padding:25px;
     border-radius:8px;
     transition:0.3s;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+.card i {
+    color: #00b4ff;
+    margin-bottom: 15px;
+    display: block;
 }
 .card:hover{
     background:#1f2e3c;
+    border-bottom: 3px solid #00b4ff;
 }
 .stats{
     display:flex;
@@ -99,8 +117,6 @@ section{
     font-size:40px;
     color:#00b4ff;
 }
-
-/* Sekcja zdjęcia firmy */
 .office-photo {
     width: 100%;
     max-height: 500px;
@@ -112,7 +128,6 @@ section{
     height: auto;
     display: block;
 }
-
 footer{
     background:#0a0f14;
     padding:50px 60px;
@@ -128,9 +143,6 @@ footer a{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-}
-.footer-info p {
-    margin: 5px 0;
 }
 .instagram{
     text-align:center;
@@ -151,14 +163,13 @@ footer a{
 <body>
 
 <div class="top-bar">
-    International call: <a href="tel:+48 790826700">+48 79 0826 700</a>
+    International call: <a href="tel:+48790826700">+48 79 0826 700</a>
     Email: <a href="mailto:office@daki-arc.com">office@daki-arc.com</a>
 </div>
 
 <header>
     <img src="logo.png" alt="DAKI Logo">
     <nav>
-        <a href="#about">About</a>
         <a href="#products">Products</a>
         <a href="#industries">Industries</a>
         <a href="#operations">Operations</a>
@@ -169,10 +180,7 @@ footer a{
 <section class="hero">
     <div class="hero-overlay">
         <h1>Worldwide Industrial Automation & Control Supplier</h1>
-        <p>
-            Global supplier supplying automation components, obsolete equipment,
-            and mission-critical industrial parts to factories and system integrators worldwide.
-        </p>
+        <p>Global supplier supplying automation components, obsolete equipment, and mission-critical industrial parts.</p>
     </div>
 </section>
 
@@ -206,6 +214,20 @@ footer a{
     </div>
 </section>
 
+<section id="industries">
+    <h2 class="section-title">Industries We Support</h2>
+    <div class="grid">
+        <div class="card"><i class="fas fa-gas-pump fa-2x"></i>Oil & Gas</div>
+        <div class="card"><i class="fas fa-bolt fa-2x"></i>Electricity</div>
+        <div class="card"><i class="fas fa-droplet fa-2x"></i>Water and wastewater</div>
+        <div class="card"><i class="fas fa-industry fa-2x"></i>Factories</div>
+        <div class="card"><i class="fas fa-building fa-2x"></i>Facility Management</div>
+        <div class="card"><i class="fas fa-ship fa-2x"></i>Marine</div>
+        <div class="card"><i class="fas fa-plane fa-2x"></i>Aviation</div>
+        <div class="card"><i class="fas fa-train-subway fa-2x"></i>Transportation</div>
+    </div>
+</section>
+
 <section id="operations">
     <h2 class="section-title">Worldwide Operations</h2>
     <div class="stats">
@@ -226,7 +248,7 @@ footer a{
 </section>
 
 <div class="office-photo">
-    <img src="office.PNG" alt="DAKI Office Headquarters">
+    <img src="office.png" alt="DAKI Office Headquarters">
 </div>
 
 <footer>
