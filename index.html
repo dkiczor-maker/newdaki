@@ -99,14 +99,38 @@ section{
     font-size:40px;
     color:#00b4ff;
 }
+
+/* Sekcja zdjęcia firmy */
+.office-photo {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    background: #0a0f14;
+}
+.office-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 footer{
     background:#0a0f14;
     padding:50px 60px;
     font-size:14px;
+    border-top: 1px solid #1f2e3c;
 }
 footer a{
     color:#00b4ff;
     text-decoration:none;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-info p {
+    margin: 5px 0;
 }
 .instagram{
     text-align:center;
@@ -146,95 +170,80 @@ footer a{
     <div class="hero-overlay">
         <h1>Worldwide Industrial Automation & Control Supplier</h1>
         <p>
-        Global supplier supplying automation components, obsolete equipment,
-        and mission-critical industrial parts to factories and system integrators worldwide.
+            Global supplier supplying automation components, obsolete equipment,
+            and mission-critical industrial parts to factories and system integrators worldwide.
         </p>
     </div>
 </section>
 
 <section id="products">
-<h2 class="section-title">Our Industrial Automation Offer</h2>
-<div class="grid">
-<div class="card">Industrial PCB</div>
-<div class="card">VFD / VSD</div>
-<div class="card">Servo Drive</div>
-<div class="card">PLC</div>
-<div class="card">HMI</div>
-<div class="card">Power Supply</div>
-<div class="card">Soft Starter</div>
-<div class="card">Servo Motor</div>
-<div class="card">BMS Controller</div>
-<div class="card">Operator Panel</div>
-<div class="card">I/O Modules</div>
-<div class="card">Valve Controller</div>
-<div class="card">Encoder</div>
-<div class="card">DCS Controller</div>
-<div class="card">Industrial PC (IPC)</div>
-<div class="card">Power Quality Analyzer</div>
-<div class="card">Industrial UPS</div>
-<div class="card">Stepper Motor Drive</div>
-<div class="card">CNC Controller</div>
-<div class="card">Process Instruments</div>
-<div class="card">Sensors / Transmitters</div>
-<div class="card">Actuator Controller</div>
-<div class="card">Motor Protection</div>
-<div class="card">Robot Controller</div>
-</div>
-</section>
-
-<section id="industries">
-<h2 class="section-title">Industries We Support</h2>
-<div class="grid">
-<div class="card">Oil & Gas</div>
-<div class="card">Electricity</div>
-<div class="card">Water & Wastewater</div>
-<div class="card">Factories</div>
-<div class="card">Facility Management</div>
-<div class="card">Marine</div>
-<div class="card">Aviation</div>
-<div class="card">Transportation</div>
-</div>
+    <h2 class="section-title">Our Industrial Automation Offer</h2>
+    <div class="grid">
+        <div class="card">Industrial PCB</div>
+        <div class="card">VFD / VSD</div>
+        <div class="card">Servo Drive</div>
+        <div class="card">PLC</div>
+        <div class="card">HMI</div>
+        <div class="card">Power Supply</div>
+        <div class="card">Soft Starter</div>
+        <div class="card">Servo Motor</div>
+        <div class="card">BMS Controller</div>
+        <div class="card">Operator Panel</div>
+        <div class="card">I/O Modules</div>
+        <div class="card">Valve Controller</div>
+        <div class="card">Encoder</div>
+        <div class="card">DCS Controller</div>
+        <div class="card">Industrial PC (IPC)</div>
+        <div class="card">Power Quality Analyzer</div>
+        <div class="card">Industrial UPS</div>
+        <div class="card">Stepper Motor Drive</div>
+        <div class="card">CNC Controller</div>
+        <div class="card">Process Instruments</div>
+        <div class="card">Sensors / Transmitters</div>
+        <div class="card">Actuator Controller</div>
+        <div class="card">Motor Protection</div>
+        <div class="card">Robot Controller</div>
+    </div>
 </section>
 
 <section id="operations">
-<h2 class="section-title">Worldwide Operations</h2>
-<div class="stats">
-<div class="stat">
-<h2>50+</h2>
-<p>Countries Served</p>
-</div>
-<div class="stat">
-<h2>24/7</h2>
-<p>International Support</p>
-</div>
-<div class="stat">
-<h2>Global</h2>
-<p>Export Logistics</p>
-</div>
-<div class="stat">
-<h2>B2B</h2>
-<p>Industrial Focus</p>
-</div>
-</div>
+    <h2 class="section-title">Worldwide Operations</h2>
+    <div class="stats">
+        <div class="stat"><h2>50+</h2><p>Countries Served</p></div>
+        <div class="stat"><h2>24/7</h2><p>International Support</p></div>
+        <div class="stat"><h2>Global</h2><p>Export Logistics</p></div>
+        <div class="stat"><h2>B2B</h2><p>Industrial Focus</p></div>
+    </div>
 </section>
 
 <section id="contact">
-<h2 class="section-title">Follow Us</h2>
-<div class="instagram">
-<a href="https://instagram.com/daki_arc" target="_blank">
-<i class="fab fa-instagram"></i> Visit our Instagram
-</a>
-</div>
+    <h2 class="section-title">Follow Us</h2>
+    <div class="instagram">
+        <a href="https://instagram.com/daki_arc" target="_blank">
+            <i class="fab fa-instagram"></i> Visit our Instagram
+        </a>
+    </div>
 </section>
 
+<div class="office-photo">
+    <img src="office.png" alt="DAKI Office Headquarters">
+</div>
+
 <footer>
-<p><strong>DAKI – Automation Robotic Control</strong></p>
-<p>Worldwide supplier of industrial automation components and mission-critical parts.</p>
-<p>International call: +48 79 0826 700</p>
-<p>Email: <a href="mailto:office@daki-arc.com">office@daki-arc.com</a></p>
-<p>© 2026 DAKI. All rights reserved.</p>
+    <div class="footer-content">
+        <div class="footer-info">
+            <p><strong>DAKI – Automation Robotic Control</strong></p>
+            <p>ul. Marii Konopnickiej 11/1</p>
+            <p>87-100 Toruń, Poland</p>
+            <p><strong>VAT ID:</strong> PL8792377491</p>
+        </div>
+        <div class="footer-contact">
+            <p>International call: <strong>+48 79 0826 700</strong></p>
+            <p>Email: <a href="mailto:office@daki-arc.com">office@daki-arc.com</a></p>
+            <p>© 2026 DAKI. All rights reserved.</p>
+        </div>
+    </div>
 </footer>
 
 </body>
 </html>
-
